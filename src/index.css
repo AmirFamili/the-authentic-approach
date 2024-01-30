@@ -1,3 +1,121 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(148, 148, 148);
+}
+
+.lato {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+}
+
+.lato-medium {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+}
+
+.lato-large {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+}
+
+.lato-small-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.lato-very-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 1000;
+    font-size: 43px;
+}
+
+
+/* * End Font */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+/* * Video & Title */
+.landing {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    .video {
+        width: 100%;
+        height: auto;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        position: fixed;
+        z-index: -1;
+        filter: brightness(50%);
+    }
+
+    .box-title{
+        position: absolute;
+        top: 40%;
+        left:3rem;
+     
+      
+    }
+}
+
+@media (max-width:1000px) {
+    .box-title{
+       h2{
+        font-size:32px;
+
+       }
+        h1{
+            font-size:18px;
+        } 
+
+    }
+}
+
+@media (max-width:550px) {
+    .box-title{
+       h2{
+        font-size:28px;
+
+       }
+        h1{
+            font-size:17px;
+        } 
+
+    }
+}
+
+/* * End Video & Title */
+
+/* * Main */
+p{
+    text-align:justify
+}
+
+/* * End Main */
