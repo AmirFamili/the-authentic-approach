@@ -8,7 +8,8 @@
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: rgb(148, 148, 148);
+    color: rgb(112, 112, 112);
+    
 }
 
 .lato {
@@ -30,7 +31,7 @@
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 25px;
+    font-size: 28px;
 }
 
 
@@ -38,7 +39,7 @@
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 32px;
+    font-size: 38px;
 }
 
 .lato-very-bold {
@@ -76,37 +77,39 @@
         filter: brightness(50%);
     }
 
-    .box-title{
+    .box-title {
         position: absolute;
         top: 40%;
-        left:3rem;
-     
-      
+        left: 3rem;
+
+
     }
 }
 
 @media (max-width:1000px) {
-    .box-title{
-       h2{
-        font-size:32px;
+    .box-title {
+        h2 {
+            font-size: 32px;
 
-       }
-        h1{
-            font-size:18px;
-        } 
+        }
+
+        h1 {
+            font-size: 18px;
+        }
 
     }
 }
 
 @media (max-width:550px) {
-    .box-title{
-       h2{
-        font-size:28px;
+    .box-title {
+        h2 {
+            font-size: 28px;
 
-       }
-        h1{
-            font-size:17px;
-        } 
+        }
+
+        h1 {
+            font-size: 17px;
+        }
 
     }
 }
@@ -114,8 +117,23 @@
 /* * End Video & Title */
 
 /* * Main */
-p{
-    text-align:justify
+.title {
+    text-shadow: 1px 1px 5px #4a535a;
+    font-size:38px;
+}
+
+p {
+    text-align: justify
 }
 
 /* * End Main */
+
+
+/* * FAQ */
+
+.faq-box{
+    border-radius: 0 0 200px 200px/ 30px;
+}
+
+
+/* * End FAQ */
