@@ -7,7 +7,7 @@ const Contact = () => {
 
 
     return (
-        <section className='bg-slate-100 p-5'>
+        <section className='bg-slate-100 p-5 w-full'>
             <h4 className=" lato-light pt-10 text-center tracking-widest max-sm:tracking-wide max-sm:text-sm">I WANT TO HEAR FROM YOU</h4>
             <h3 className="text-blue-main title text-center lato-bold pt-2  pb-10 mb-5 tracking-widest max-sm:tracking-wide max-sm:text-3xl">GET IN TOUCH</h3>
 
@@ -71,7 +71,7 @@ const Contact = () => {
 
                             if (values.email === '') {
 
-                                errors.email = 'Provide valid email';
+                                errors.email = 'Email address is required';
                             } else if (!values.email.match(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
                                 errors.email = 'This is not a valid email'
                             }
@@ -134,7 +134,7 @@ const Contact = () => {
                                 </ErrorMessage>
                             </div>
 
-                            <button className="submit  transition bottom-0 max-md:bottom-5 max-md:right-10 bg-blue-main text-white right-0 py-2 px-5  rounded-md hover:bg-yellow-main hover:text-dark hover:translate-y-1 hover:scale-105 " type="submit" >{loading ? <span><i className="fa-solid fa-spinner animate-spin "></i><span className="pl-2">Sending...</span></span> : "Send"}</button>
+                            <button className="submit  transition bottom-0 max-md:bottom-5 max-md:right-10 bg-blue-main text-white right-0 py-3 px-10 max-md:px-6 max-md:py-2 rounded-md hover:bg-yellow-main hover:text-dark hover:translate-y-1 hover:scale-105 " type="submit" >{loading ? <span><i className="fa-solid fa-spinner animate-spin "></i><span className="pl-2">Sending...</span></span> : "Send"}</button>
 
 
 
@@ -144,7 +144,7 @@ const Contact = () => {
                 </div>
 
 
-                <div data-aos="fade-left" className="md:pl-5 max-md:ml-5">
+                <div  className="md:pl-5 max-md:ml-5 ">
                     <h5 className="lato  pt-10  tracking-widest max-sm:tracking-wide ">CONNECT WITH US</h5>
                     <div className="pt-5">
                         <p className='py-2'>
@@ -152,7 +152,7 @@ const Contact = () => {
                         </p>
 
                         <p className='py-2'>
-                            <a href="mailto:info@theauthenticapproach.life" className='hover:text-yellow-main transition'><i className="fa-solid fa-envelope  text-white bg-blue-main p-2 rounded-full shadow-md"></i> <span className='sm:tracking-widest pl-2 lg:text-base sm:text-sm '>info@theauthenticapproach.life</span></a>
+                            <a href="mailto:info@theauthenticapproach.life" className='hover:text-yellow-main transition'><i className="fa-solid fa-envelope  text-white bg-blue-main p-2 rounded-full shadow-md"></i> <span className='md:tracking-widest pl-2 max-sm:text-sm '>info@theauthenticapproach.life</span></a>
                         </p>
 
                         <div className="text-center p-5 h-12">
