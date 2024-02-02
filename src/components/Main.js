@@ -1,10 +1,7 @@
 import Img1 from '../assets/images/love.webp';
 import Img2 from '../assets/images/success.webp';
 import Img3 from '../assets/images/happy.webp';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init();
+
 
 
 

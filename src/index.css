@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* * Font */
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 .lato-light {
@@ -51,12 +53,21 @@
 
 /* * End Font */
 
+
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: "Lato", sans-serif;
 }
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
 
 /* * Video & Title */
 .landing {

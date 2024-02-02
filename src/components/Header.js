@@ -5,8 +5,8 @@ import MobileLogo from "../assets/images/TheAuthenticApproach-mobile.png";
 const Header = () => {
     return (
 
-        <header className="z-20 py-2 px-8 flex justify-between items-center absolute w-full">
-            <a href="#">
+        <header id="header" className="z-20 py-2 px-8 flex justify-between items-center absolute w-full">
+            <a href="">
                 <img className=" max-lg:hidden " src={ComputerLogo} alt="TheAuthenticApproach" />
                 <img className="hidden max-lg:block max-sm:w-11/12 max-sm:pt-2" src={MobileLogo} alt="TheAuthenticApproach" />
             </a>

@@ -12,6 +12,7 @@ const Contact = () => {
             <h3 className="text-blue-main title text-center lato-bold pt-2  pb-10 mb-5 tracking-widest max-sm:tracking-wide max-sm:text-3xl">GET IN TOUCH</h3>
 
             <div className="p-10 flex justify-around items-center max-md:block ">
+                
                 <div data-aos="fade-right" className="w-1/2 max-md:w-full">
                     <Formik initialValues={{
                         name: "",
@@ -28,9 +29,9 @@ const Contact = () => {
                                     'service_nd1ql4l',
                                     'template_10l013s',
                                     {
-                                        from_name: values.name ,
+                                        from_name: values.name,
                                         to_name: "Golnaz",
-                                        from_number:values.phone,
+                                        from_number: values.phone,
                                         from_email: values.email,
                                         to_email: "golnazlcsw@gmail.com",
                                         message: values.message,
@@ -54,8 +55,8 @@ const Contact = () => {
                                         alert("Ahh, something went wrong. Please try again.");
                                     }
                                 );
-                           
-                           
+
+
                         }}
 
 
@@ -133,7 +134,7 @@ const Contact = () => {
                                 </ErrorMessage>
                             </div>
 
-                            <button className="submit transition bottom-0 max-md:bottom-5 max-md:right-10 bg-blue-main text-white right-0 py-2 px-4 rounded-md hover:bg-yellow-main hover:text-dark hover:translate-y-1 hover:scale-105 " type="submit" >{loading ? "Sending..." : "Send"}</button>
+                            <button className="submit  transition bottom-0 max-md:bottom-5 max-md:right-10 bg-blue-main text-white right-0 py-2 px-5  rounded-md hover:bg-yellow-main hover:text-dark hover:translate-y-1 hover:scale-105 " type="submit" >{loading ? <span><i className="fa-solid fa-spinner animate-spin "></i><span className="pl-2">Sending...</span></span> : "Send"}</button>
 
 
 
@@ -141,21 +142,23 @@ const Contact = () => {
 
                     </Formik>
                 </div>
+
+
                 <div data-aos="fade-left" className="md:pl-5 max-md:ml-5">
                     <h5 className="lato  pt-10  tracking-widest max-sm:tracking-wide ">CONNECT WITH US</h5>
                     <div className="pt-5">
                         <p className='py-2'>
-                            <a href="tel:+19452343273" className='hover:text-yellow-main '><i class="fa-solid fa-phone text-white bg-blue-main p-2 rounded-full shadow-md  "></i> <span className='tracking-widest pl-2  '>945-234-3273</span></a>
+                            <a href="tel:+19452343273" className='hover:text-yellow-main '><i className="fa-solid fa-phone text-white bg-blue-main p-2 rounded-full shadow-md  "></i> <span className='tracking-widest pl-2  '>945-234-3273</span></a>
                         </p>
 
                         <p className='py-2'>
-                            <a href="mailto:info@theauthenticapproach.life" className='hover:text-yellow-main transition'><i class="fa-solid fa-envelope  text-white bg-blue-main p-2 rounded-full shadow-md"></i> <span className='sm:tracking-widest pl-2 lg:text-base sm:text-sm '>info@theauthenticapproach.life</span></a>
+                            <a href="mailto:info@theauthenticapproach.life" className='hover:text-yellow-main transition'><i className="fa-solid fa-envelope  text-white bg-blue-main p-2 rounded-full shadow-md"></i> <span className='sm:tracking-widest pl-2 lg:text-base sm:text-sm '>info@theauthenticapproach.life</span></a>
                         </p>
 
                         <div className="text-center p-5 h-12">
-                            <a href="https://www.facebook.com/people/The-Authentic-Approach/61551821399497/?mibextid=2JQ9oc" className='m-2 text-xl '> <i class="transition fa-brands fa-facebook text-white bg-blue-main hover:bg-yellow-main p-2 rounded-full shadow-md hover:translate-y-1 hover:scale-105"></i></a>
+                            <a href="https://www.facebook.com/people/The-Authentic-Approach/61551821399497/?mibextid=2JQ9oc" className='m-2 text-2xl max-sm:text-xl'> <i className="transition fa-brands fa-facebook text-white bg-blue-main hover:bg-yellow-main p-3 rounded-full shadow-md hover:translate-y-1 hover:scale-105"></i></a>
 
-                            <a href="https://www.instagram.com/theauthenticapproach/" className='m-2 text-xl'> <i class="transition fa-brands fa-instagram text-white bg-blue-main hover:bg-yellow-main p-2 rounded-full shadow-md hover:translate-y-1 hover:scale-105"></i></a>
+                            <a href="https://www.instagram.com/theauthenticapproach/" className='m-2 text-2xl max-sm:text-xl'> <i className="transition fa-brands fa-instagram text-white bg-blue-main hover:bg-yellow-main p-3 rounded-full shadow-md hover:translate-y-1 hover:scale-105"></i></a>
                         </div>
 
 
