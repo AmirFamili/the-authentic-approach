@@ -12,7 +12,7 @@ const Contact = () => {
             <h3 className="text-blue-main title text-center lato-bold pt-2  pb-10 mb-5 tracking-widest max-sm:tracking-wide max-sm:text-3xl">GET IN TOUCH</h3>
 
             <div className="p-10 flex justify-around items-center max-md:block ">
-                
+
                 <div data-aos="fade-right" className="w-1/2 max-md:w-full">
                     <Formik initialValues={{
                         name: "",
@@ -33,7 +33,7 @@ const Contact = () => {
                                         to_name: "Golnaz",
                                         from_number: values.phone,
                                         from_email: values.email,
-                                        to_email: "golnazlcsw@gmail.com",
+                                        to_email: "info@theauthenticapproach.com",
                                         message: values.message,
                                     },
                                     'ILFzRPGLT1I6UwRip'
@@ -134,9 +134,9 @@ const Contact = () => {
                                 </ErrorMessage>
                             </div>
 
-                            <button className="submit  transition bottom-0 max-md:bottom-5 max-md:right-10 bg-blue-main text-white right-0 py-3 px-10 max-md:px-6 max-md:py-2 rounded-md hover:bg-yellow-main hover:text-dark hover:translate-y-1 hover:scale-105 " type="submit" >{loading ? <span><i className="fa-solid fa-spinner animate-spin "></i><span className="pl-2">Sending...</span></span> : "Send"}</button>
+                            <button className="submit shadow-gray-700 transition bottom-0 max-md:bottom-5 shadow-md max-md:right-10 bg-blue-main text-white right-0 py-3 px-10 max-md:px-6 max-md:py-2 rounded-md hover:bg-yellow-main hover:text-dark hover:translate-y-1 hover:scale-105 " type="submit" >{loading ? <span><i className="fa-solid fa-spinner animate-spin "></i><span className="pl-2">Sending...</span></span> : "Send"}</button>
 
-
+                           
 
                         </Form>
 
@@ -144,15 +144,15 @@ const Contact = () => {
                 </div>
 
 
-                <div  className="md:pl-5 max-md:ml-5 ">
+                <div className="md:pl-5 max-md:ml-5 ">
                     <h5 className="lato  pt-10  tracking-widest max-sm:tracking-wide ">CONNECT WITH US</h5>
                     <div className="pt-5">
                         <p className='py-2'>
-                            <a href="tel:+19452343273" className='hover:text-yellow-main '><i className="fa-solid fa-phone text-white bg-blue-main p-2 rounded-full shadow-md  "></i> <span className='tracking-widest pl-2  '>945-234-3273</span></a>
+                            <a href="tel:+19452343273" className='hover:text-yellow-main '><i className="fa-solid fa-phone text-white bg-blue-main p-2 rounded-full shadow-md  "></i> <span className='tracking-widest pl-2 max-sm:tracking-normal '>945-234-3273 / (945) BE-HEARD</span></a>
                         </p>
 
                         <p className='py-2'>
-                            <a href="mailto:info@theauthenticapproach.life" className='hover:text-yellow-main transition'><i className="fa-solid fa-envelope  text-white bg-blue-main p-2 rounded-full shadow-md"></i> <span className='md:tracking-widest pl-2 max-sm:text-sm '>info@theauthenticapproach.life</span></a>
+                            <a href="mailto:info@theauthenticapproach.com" className='hover:text-yellow-main transition'><i className="fa-solid fa-envelope  text-white bg-blue-main p-2 rounded-full shadow-md"></i> <span className='md:tracking-widest pl-2 max-sm:text-sm '>info@theauthenticapproach.com</span></a>
                         </p>
 
                         <div className="text-center p-5 h-12">
@@ -161,6 +161,10 @@ const Contact = () => {
                             <a href="https://www.instagram.com/theauthenticapproach/" className='m-2 text-2xl max-sm:text-xl'> <i className="transition fa-brands fa-instagram text-white bg-blue-main hover:bg-yellow-main p-3 rounded-full shadow-md hover:translate-y-1 hover:scale-105"></i></a>
                         </div>
 
+                        <div className='text-center'>
+                            <p className="text-center mt-14 mb-5">Are you having thoughts of suicide? Call or Text 988</p>
+                            <a href="tel:+1988"> <button className='transition  shadow-gray-700 max-md:py-2  max-md:px-5 py-3 px-6 bg-blue-main shadow-md text-white rounded-lg hover:bg-yellow-main hover:text-slate-900 hover:translate-y-1 hover:scale-110' type='button'>Suicide & Crisis Lifeline</button> </a>
+                        </div>
 
                     </div>
                 </div>

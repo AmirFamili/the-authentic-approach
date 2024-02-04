@@ -77,7 +77,9 @@ html{
     width: 100%;
     height: 100vh;
 
-    .video {
+    
+}
+.video {
         width: 100%;
         height: auto;
         min-width: 100%;
@@ -95,8 +97,6 @@ html{
 
 
     }
-}
-
 @media (max-width:1000px) {
     .box-title {
         h2 {

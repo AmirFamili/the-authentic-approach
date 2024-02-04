@@ -8,7 +8,7 @@ import Img3 from '../assets/images/happy.webp';
 const Main = () => {
     return (
         <div className="p-10 pb-28 bg-slate-100 ">
-            <h3 className="title text-center lato-bold  text-blue-main p-10 mb-10 tracking-widest max-sm:tracking-wide max-sm:text-3xl">THE AUTHENTIC APPROACH</h3>
+            <h3 className="title text-center lato-bold  text-blue-main p-10 mb-10 tracking-widest max-sm:tracking-wide max-sm:text-3xl">THE STORY</h3>
             <div className="main-box m-5 rounded-lg bg-slate-200 max-sm:m-0 ">
                 <div  data-aos="fade-up" className="  p-10 flex justify-center items-center max-lg:block max-lg:p-28 max-md:p-6">
                     <img className='rounded-2xl w-1/2 m-2 max-lg:w-full shadow-xl' src={Img1} alt="love" />
