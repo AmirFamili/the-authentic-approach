@@ -8,7 +8,7 @@ const Header = () => {
             <a href="#">
                 <div className="flex items-center">
                      <img className=" w-24 max-md:w-16 " src={MobileLogo}  alt="TheAuthenticApproach" />
-                     <h1 className=" pl-3 text-3xl  text-white tracking-widest font-extrabold max-md:text-2xl max-sm:text-md max-md:hidden" >THE AUTHENTIC APPROACH</h1>
+                     <h1 className=" pl-3 text-2xl  text-white tracking-widest font-extrabold max-sm:text-md max-md:hidden" >THE AUTHENTIC APPROACH</h1>
                      <h1 className="logo pl-3 text-3xl  text-white tracking-widest font-extrabold  hidden max-md:block"><span className="block">the</span><span className="block">AUTHENTIC</span>  APPROACH</h1>
                 </div>
                
