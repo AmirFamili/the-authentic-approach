@@ -1,63 +1,70 @@
-import Img1 from '../assets/images/love.webp';
-import Img2 from '../assets/images/success.webp';
-import Img3 from '../assets/images/happy.webp';
-
-
-
+import Img1 from "../assets/images/golnaz.jpg";
 
 const Main = () => {
-    return (
-        <div className="p-10 pb-28 bg-slate-100 ">
-            <h3 className="title text-center lato-bold  text-blue-main p-10 mb-10 tracking-widest max-sm:tracking-wide max-sm:text-3xl">THE STORY</h3>
-            <div className="main-box m-5 rounded-lg bg-slate-200 max-sm:m-0 ">
-                <div  data-aos="fade-up" className="  p-10 flex justify-center items-center max-lg:block max-lg:p-28 max-md:p-6">
-                    <img className='rounded-2xl w-1/2 m-2 max-lg:w-full shadow-xl' src={Img1} alt="love" />
-                    <p className="lato-medium p-6 w-1/2 text-2xl max-sm:text-lg text-blue-light max-lg:w-full">Welcome, friend. I’m Golnaz Anbarghalami, LCSW, and I’ve worked in social
-                        services for
-                        over 15 years throughout my adult life. I currently serve the Dallas-Fort Worth metroplex in
-                        crisis
-                        counseling and suicide prevention, and also worked in public health programs for 10+ years
-                        alongside homeless, incarcerated, and refugee populations. I find the most fulfillment and
-                        feel my strengths have the strongest impact when working with individuals one-on-one.</p>
-                </div>
+  return (
+    <div className="px-10 py-10 pb-28 bg-blue-main max-md:px-5 ">
+      <h3 className="title text-center lato-bold  text-white p-10 mb-10 tracking-widest max-sm:tracking-wide max-sm:text-3xl">
+        WELCOME!
+      </h3>
+      <div className="main-box m-5 rounded-lg bg-slate-200 max-sm:m-0 ">
+        <div
+          data-aos="fade-up"
+          className="  p-10 flex justify-center items-center max-lg:block  max-lg:p-28 max-md:p-6"
+        >
+          <div className=" w-1/3 ml-2 max-lg:w-full  justify-center items-center hidden max-lg:flex max-lg:mt-2 max-lg:ml-0">
+            <img
+              className="rounded-2xl w-2/3  max-lg:w-full shadow-xl"
+              src={Img1}
+              alt="Golnaz Anbar"
+            />
+          </div>
+          <div className="w-1/2 max-lg:w-full p-5 max-md:px-2 ">
+            <p className="lato-medium mt-5 text-2xl max-sm:text-lg text-blue-main ">
+              I am Golnaz Anbarghalami, LCSW. The Authentic Approach is a
+              culmination of my experiences in social services and mental health
+              since 2008. It is a privilege and honor to hear the stories that
+              have shaped your life.
+            </p>
+            <p className="lato-medium mt-4 text-2xl max-sm:text-lg text-blue-main ">
+              The people you love, those you’ve lost, those who’ve caused pain,
+              those you feel you can’t live without. Love at first sight, love
+              lost, misaligned relationships. Cultural celebrations, identity
+              conflict, parental dysfunction, personal insecurities, growing
+              pains, embracing aging. Successes like personal wins, professional
+              growth, family prosperity; struggles like unrealized goals,
+              difficulty with interpersonal communication, failed commitments, and stress.
+            </p>
+            <p className="lato-medium mt-4 text-2xl max-sm:text-lg  text-blue-main">
+              Whatever your motivation, let me help guide you in discovering
+              YOUR authentic approach to navigating and living your best life
+              through counseling or coaching services today.
+            </p>
+        
+          </div>
 
-                <div data-aos="fade-up" className=" p-10 flex justify-center items-center max-lg:block  max-sm:p-6 max-lg:p-28 max-md:p-6">
-
-                    <p className="lato-medium p-6 w-1/2 text-2xl max-sm:text-lg text-blue-light max-lg:w-full max-lg:hidden">I immigrated to the United States from Iran at an early age and began
-                        volunteering with
-                        my mom at various non-profit organizations. Being of service to others inspired me to pursue
-                        studies and a career in psychology and social work. Growing up, I often felt pulled between
-                        two cultures. Navigating these times in my youth fueled my desire to better understand
-                        myself and others, strengthened my passion for connecting with people of all backgrounds,
-                        and has led me to dedicate my life to empowering others to live their best, authentic lives.</p>
-                    <img className='rounded-2xl w-1/2 m-2 shadow-xl max-lg:w-full' src={Img2} alt="success" />
-
-                    <p className="lato-medium p-6 w-1/2 max-lg:w-full text-2xl max-sm:text-lg text-blue-light hidden max-lg:block">I immigrated to the United States from Iran at an early age and began
-                        volunteering with
-                        my mom at various non-profit organizations. Being of service to others inspired me to pursue
-                        studies and a career in psychology and social work. Growing up, I often felt pulled between
-                        two cultures. Navigating these times in my youth fueled my desire to better understand
-                        myself and others, strengthened my passion for connecting with people of all backgrounds,
-                        and has led me to dedicate my life to empowering others to live their best, authentic lives.</p>
-
-                </div>
-
-                <div data-aos="fade-up" className=" p-10 flex justify-center items-center max-lg:block max-sm:p-6 max-lg:p-28 max-md:p-6">
-                    <img className='rounded-2xl w-1/2 m-2 shadow-xl max-lg:w-full' src={Img3} alt="happy" />
-                    <p className="lato-medium p-6 w-1/2 text-2xl max-sm:text-lg text-blue-light max-lg:w-full">Whether you want to talk, scream, cry, listen, sit in silence, jump for
-                        joy,
-                        or all of
-                        the above, I promise to offer you a warm place and safe space, free of judgment, where you can
-                        breathe,
-                        be free, be seen, be heard, and BE YOU. I am here for you, and I look forward to meeting you.
-                    </p>
-
-                </div>
-
-            </div>
-
+          <div className=" w-1/3 ml-2 max-lg:w-full flex justify-center items-center max-lg:hidden">
+            <img
+              className="rounded-2xl w-2/3  max-lg:w-full shadow-xl"
+              src={Img1}
+              alt="Golnaz Anbar"
+            />
+          </div>
         </div>
-    );
-}
+        <div className="w-full pb-10 mb-5 text-center">
+          <a
+            href="https://theauthenticapproach.clientsecure.me/"
+            className=" w-1/5 max-md:w-2/5 max-sm:w-3/5 m-auto  text-center   transition shadow-gray-700 max-md:py-3  max-md:px-5 py-4 px-6 bg-blue-main shadow-lg text-white rounded-lg hover:bg-yellow-main hover:text-slate-900 hover:translate-y-1 hover:scale-105 "
+            type="button"
+          >
+            Schedule A Free Consultation
+          </a>
+          <p className="text-center font-bold text-2xl my-10 p-3 text-blue-main max-md:text-xl max-sm:text-lg" >
+            MY LOVE LANGUAGE IS REMINDING YOU OF YOUR POWER
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Main;

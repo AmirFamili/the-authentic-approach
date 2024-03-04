@@ -7,11 +7,11 @@ const Contact = () => {
 
 
     return (
-        <section className='bg-slate-100 p-5 w-full'>
-            <h4 className=" lato-light pt-10 text-center tracking-widest max-sm:tracking-wide max-sm:text-sm">I WANT TO HEAR FROM YOU</h4>
-            <h3 className="text-blue-main title text-center lato-bold pt-2  pb-10 mb-5 tracking-widest max-sm:tracking-wide max-sm:text-3xl">GET IN TOUCH</h3>
+        <section className='bg-slate-100 p-10 w-full '>
+            <h4 className=" lato-light mt-10 text-center tracking-widest max-sm:tracking-wide max-sm:text-sm">I WANT TO HEAR FROM YOU</h4>
+            <h3 className="text-blue-main title text-center lato-bold pt-2  pb-10 mb-5 tracking-widest max-sm:tracking-wide max-sm:text-3xl max-md:pb-0">GET IN TOUCH</h3>
 
-            <div className="p-10 flex justify-around items-center max-md:block ">
+            <div className="p-10 flex justify-around items-center max-md:block max-md:p-2">
 
                 <div data-aos="fade-right" className="w-1/2 max-md:w-full">
                     <Formik initialValues={{
@@ -41,7 +41,7 @@ const Contact = () => {
                                 .then(
                                     () => {
                                         setLoading(false);
-                                        alert("Thank you. I will get back to you as soon as possible.");
+                                        alert("Thank you. We will get back to you as soon as possible.");
                                         values.name = '';
                                         values.email = '';
                                         values.phone = '';
@@ -97,7 +97,7 @@ const Contact = () => {
 
 
                             <div className='pb-3 '>
-                                <label for="name" >Name</label>
+                                <label for="name"  className='text-blue-main '>Name</label>
 
                                 <Field type="text" name="name" className="name email border w-full rounded-md h-10 mt-1  p-2 outline-none hover:border-yellow-main focus:border-yellow-main transition " />
                                 <ErrorMessage name='name' >
@@ -106,7 +106,7 @@ const Contact = () => {
                             </div>
 
                             <div className='pb-3'>
-                                <label for="email">Email Address</label>
+                                <label for="email" className='text-blue-main '>Email Address</label>
 
                                 <Field type="email" name="email" className="email border w-full rounded-md h-10 mt-1  p-2 outline-none hover:border-yellow-main focus:border-yellow-main transition " />
 
@@ -118,7 +118,7 @@ const Contact = () => {
 
                             <div className='pb-3'>
 
-                                <label for="phone">Phone Number</label>
+                                <label for="phone" className='text-blue-main '>Phone Number</label>
                                 <Field type="phone" name="phone" className="phone border w-full rounded-md h-10 mt-1  p-2 outline-none hover:border-yellow-main focus:border-yellow-main transition " />
 
                                 <ErrorMessage name='phone' >
@@ -127,7 +127,7 @@ const Contact = () => {
                             </div>
 
                             <div className='pb-3 '>
-                                <label for="message" >Messsage</label>
+                                <label for="message" className='text-blue-main '>Messsage</label>
                                 <Field as="textarea" name="message" className="message border  w-full rounded-md h-56 mt-1  p-2 outline-none  hover:border-yellow-main focus:border-yellow-main transition " />
                                 <ErrorMessage name='message' >
                                     {(errorMsg) => <div className="error text-red-600 ">{errorMsg}</div>}
@@ -144,15 +144,15 @@ const Contact = () => {
                 </div>
 
 
-                <div className="md:pl-5 max-md:ml-5 ">
-                    <h5 className="lato  pt-10  tracking-widest max-sm:tracking-wide ">CONNECT WITH US</h5>
+                <div className="md:pl-1 max-md:ml-1 ">
+                    <h5 className="lato  pt-10 max-md:pt-14 tracking-widest max-sm:tracking-wide text-blue-main">CONNECT WITH US</h5>
                     <div className="pt-5">
-                        <p className='py-2'>
-                            <a href="tel:+19452343273" className='hover:text-yellow-main '><i className="fa-solid fa-phone text-white bg-blue-main p-2 rounded-full shadow-md  "></i> <span className='tracking-widest pl-2 max-sm:tracking-normal '>945-234-3273 / (945) BE-HEARD</span></a>
+                        <p className='py-2 '>
+                            <a href="tel:+19452343273" className='hover:text-yellow-main '><i className="fa-solid fa-phone text-white bg-blue-main p-2  rounded-full shadow-md  "></i> <span className='tracking-widest pl-2 max-md:pl-1  max-sm:tracking-normal  text-blue-main'>945.Be Heard / 945.234.3273</span></a>
                         </p>
 
                         <p className='py-2'>
-                            <a href="mailto:info@theauthenticapproach.com" className='hover:text-yellow-main transition'><i className="fa-solid fa-envelope  text-white bg-blue-main p-2 rounded-full shadow-md"></i> <span className='md:tracking-widest pl-2 max-sm:text-sm '>info@theauthenticapproach.com</span></a>
+                            <a href="mailto:hello@theauthenticapproach.com" className='hover:text-yellow-main transition'><i className="fa-solid fa-envelope  text-white bg-blue-main p-2 rounded-full shadow-md"></i> <span className='md:tracking-widest pl-2 max-sm:text-sm text-blue-main'>hello@theauthenticapproach.com</span></a>
                         </p>
 
                         <div className="text-center p-5 h-12">
@@ -162,7 +162,7 @@ const Contact = () => {
                         </div>
 
                         <div className='text-center'>
-                            <p className="text-center mt-14 mb-5">Are you having thoughts of suicide? Call or Text 988</p>
+                            <p className="text-center mt-14 mb-5 text-blue-main">Are you having thoughts of suicide? Call or Text 988</p>
                             <a href="tel:+1988"> <button className='transition  shadow-gray-700 max-md:py-2  max-md:px-5 py-3 px-6 bg-blue-main shadow-md text-white rounded-lg hover:bg-yellow-main hover:text-slate-900 hover:translate-y-1 hover:scale-110' type='button'>Suicide & Crisis Lifeline</button> </a>
                         </div>
 

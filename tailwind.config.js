@@ -8,6 +8,7 @@ module.exports = {
         'yellow-main': '#e1ae45',
         'blue-light': '#13315a',
         'dark': '#161C2C',
+        'blue-second':'#0e2d52'
       },
     },
   },
